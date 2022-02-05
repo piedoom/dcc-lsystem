@@ -52,9 +52,9 @@ impl TransformationRule {
 /// ```
 #[derive(Default, Clone)]
 pub struct LSystemBuilder {
-    arena: Arena<Token>,
-    axiom: Option<Vec<ArenaId>>,
-    rules: Vec<TransformationRule>,
+    pub arena: Arena<Token>,
+    pub axiom: Option<Vec<ArenaId>>,
+    pub rules: Vec<TransformationRule>,
 }
 
 impl LSystemBuilder {
