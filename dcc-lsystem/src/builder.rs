@@ -6,7 +6,7 @@ use crate::system::LSystem;
 use crate::token::Token;
 
 #[derive(Debug, Clone)]
-struct TransformationRule {
+pub struct TransformationRule {
     predecessor: ArenaId,
     successor: Vec<ArenaId>,
 }
