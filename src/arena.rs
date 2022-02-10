@@ -232,7 +232,7 @@ impl<T> Arena<T> {
     /// ```
     pub fn enumerate(&self) -> EnumerableArena<'_, T> {
         EnumerableArena {
-            inner: &self,
+            inner: self,
             pos: 0,
         }
     }
